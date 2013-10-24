@@ -1,0 +1,3 @@
+{% for export, export_values in config_nfs['exports'].items() -%}
+{{ export }} {{ export_values['address'] }}({{ export_values['permissions'] }})
+{% endfor -%}
